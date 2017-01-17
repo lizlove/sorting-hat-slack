@@ -11,10 +11,12 @@ section.header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  padding: 5%;
 }
 
 section.header > img {
-  width: 500px;
+  width: 350px;
   height: auto;
   max-width: 80%;
 }

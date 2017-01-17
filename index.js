@@ -19,7 +19,7 @@ const server = app.listen(3080, () => {
 
 app.get('/slack', function(req, res){
   if (!req.query.code) { // access denied
-    res.redirect('https://sortinghat.co/sort');
+    res.redirect('http://sorting-hat-bot.herokuapp.com/sort');
     return;
   }
   var data = {form: {

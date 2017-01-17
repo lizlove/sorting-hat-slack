@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-const server = app.listen(3080, () => {
+const server = app.listen(process.env.PORT || 3080, () => {
   console.log('Listening on port %d', server.address().port);
 });
 

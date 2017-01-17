@@ -7,9 +7,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(favicon(__dirname+'/public/images/favicon.ico'));
-app.use(express.static(path.join(__dirname, 'public')));
-
 const server = app.listen(3080, () => {
   console.log('Listening on port %d', server.address().port);
  });

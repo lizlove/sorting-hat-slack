@@ -1,0 +1,25 @@
+{
+  "name": "sorting-hat-slack",
+  "version": "1.0.0",
+  "description": "Want to quickly sort yourself into a Hogwarts House on Slack? Think that friend is really a Slytherin not a Gryffindor, but want a little magical confirmation from a sentient hat? Just use the `/sortinghat` slash command! Type your the slash command followed by a name of the witch or wizard to be sorted. Sorting Hat bot responds with a short rhyme and the banner of the selected House.",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lizlove/sorting-hat-slack.git"
+  },
+  "author": "Elizabeth Lovero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lizlove/sorting-hat-slack/issues"
+  },
+  "homepage": "https://github.com/lizlove/sorting-hat-slack#readme"
+}

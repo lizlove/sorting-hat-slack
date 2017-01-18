@@ -69,7 +69,7 @@ function handleQuery(q, res){
 
     let house = hatManager.getHogwartsHouse(name);
 
-    let image = `https://sorting-hat.co/images/${house.title}.jpg`;
+    let image = `https://sorting-hat-bot.herokuapp.com/images/${house.title}.jpg`;
     let data = {
       response_type: 'in_channel', // public to the channel
       text: `*${name}*: ${house.body}`,

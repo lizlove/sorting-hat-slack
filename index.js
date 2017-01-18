@@ -47,13 +47,6 @@ app.get('/slack', function(req, res){
   })
 });
 
-
-// Routes - Index
-
-app.get('/sort', (req, res)=>{
-  res.sendFile(path.join(__dirname+'/index.html'));
-});
-
 // Sorting Hat Slash Command
 
 app.get('/', (req, res)=> {
@@ -100,3 +93,8 @@ function handleQuery(q, res){
     res.json(data);
   }
 }
+
+// Routes - Index
+app.get('/sort', (req, res)=>{
+  res.sendFile(path.join(__dirname+'/index.html'));
+});

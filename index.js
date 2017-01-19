@@ -73,11 +73,17 @@ function handleQuery(q, res){
     let image = `https://sorting-hat-bot.herokuapp.com/images/${house.title}.jpg`;
     let data = {
       response_type: 'in_channel', // public to the channel
-      text: `*${name}*: ${house.body}`,
       mrkdwn: true,
       attachments:[
       {
-        image_url: image
+        color: "#34a5c6",
+        author_name: `${name}`,
+        pretext: "You belong in...",
+        title: `${house.title}`,
+        text: `${house.body}`,
+        thumb_url: image,
+        footer: "Sorting Hat",
+        footer_icon: "https://sorting-hat-bot.herokuapp.com/images/sortingHat.png"
       }
     ]};
     res.json(data);

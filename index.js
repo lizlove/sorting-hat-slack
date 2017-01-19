@@ -70,7 +70,7 @@ function handleQuery(q, res){
 
     let house = hatManager.getHogwartsHouse(name);
 
-    let image = `https://sorting-hat-bot.herokuapp.com/images/${house.title}.jpg`;
+    let image = `https://sorting-hat-bot.herokuapp.com/images/${house.name}.jpg`;
     let data = {
       response_type: 'in_channel', // public to the channel
       mrkdwn: true,
@@ -81,7 +81,7 @@ function handleQuery(q, res){
         pretext: "You belong in...",
         title: `${house.title}`,
         text: `${house.body}`,
-        thumb_url: image,
+        image_url: image,
         footer: "Sorting Hat",
         footer_icon: "https://sorting-hat-bot.herokuapp.com/images/sortingHat.png"
       }

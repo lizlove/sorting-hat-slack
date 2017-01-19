@@ -81,7 +81,7 @@ function handleQuery(q, res){
         pretext: "You belong in...",
         title: `${house.title}`,
         text: `${house.body}`,
-        image_url: image,
+        image_url: `${image}`,
         footer: "Sorting Hat",
         footer_icon: "https://sorting-hat-bot.herokuapp.com/images/sortingHat.png"
       }

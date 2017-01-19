@@ -76,7 +76,7 @@ function handleQuery(q, res){
       mrkdwn: true,
       attachments:[
       {
-        "image_url": image,
+        "image_url": `${image}`,
         "color": "#34a5c6",
         "author_name": `${name}`,
         "pretext": "You belong in...",

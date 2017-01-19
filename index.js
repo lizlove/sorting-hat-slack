@@ -76,14 +76,14 @@ function handleQuery(q, res){
       mrkdwn: true,
       attachments:[
       {
-        color: "#34a5c6",
-        author_name: `${name}`,
-        pretext: "You belong in...",
-        title: `${house.title}`,
-        text: `${house.body}`,
-        image_url: `${image}`,
-        footer: "Sorting Hat",
-        footer_icon: "https://sorting-hat-bot.herokuapp.com/images/sortingHat.png"
+        "image_url": image,
+        "color": "#34a5c6",
+        "author_name": `${name}`,
+        "pretext": "You belong in...",
+        "title": `${house.title}`,
+        "text": `${house.body}`,
+        "footer": "Sorting Hat",
+        "footer_icon": "https://sorting-hat-bot.herokuapp.com/images/sortingHat.png"
       }
     ]};
     res.json(data);

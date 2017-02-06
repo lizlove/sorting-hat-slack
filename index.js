@@ -17,7 +17,7 @@ const server = app.listen(process.env.PORT || 3080, () => {
 });
 
 
-app.use(favicon(__dirname + 'images/favicon.ico'));
+app.use(favicon(__dirname + '/public/images/favicon.ico'));
 
 // Slack Auth
 

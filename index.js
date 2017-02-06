@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const path = require("path");
 const hatManager = require('./hatManager');
 const request = require('request');
+const favicon = require('serve-favicon');
 
 const app = express();
 app.use(bodyParser.json());
@@ -15,6 +16,8 @@ const server = app.listen(process.env.PORT || 3080, () => {
   console.log('Listening on port %d', server.address().port);
 });
 
+
+app.use(favicon(__dirname + 'images/favicon.ico'));
 
 // Slack Auth
 

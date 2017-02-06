@@ -4,6 +4,10 @@
 * www.sortinghat.co
 */
 
+body {
+	background-color: #e1e0dd;
+	}
+
 section.header {
   display: flex;
   flex-direction: column;

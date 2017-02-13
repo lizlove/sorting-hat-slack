@@ -11,7 +11,7 @@ Just use the `/sortinghat` slash command! Type your the slash command followed b
 
 Authenticate from this button!
 
-[![Login with Slack](https://slack.com/oauth/authorize?scope=commands+team%3Aread&client_id=13962040612.127653198336)
+[![Login with Slack](https://platform.slack-edge.com/img/add_to_slack.png)(https://slack.com/oauth/authorize?scope=commands+team%3Aread&client_id=13962040612.127653198336)]
 
 ## About Sorting Hat
 

@@ -8,56 +8,58 @@
 * www.sortinghat.co
 */
 
-/* Reset */
+/* Reset
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-		margin: 0;
-		padding: 0;
-		border: 0;
-		font-size: 100%;
-		font: inherit;
-		vertical-align: baseline;
-	}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 
-	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-		display: block;
-	}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 
-	body {
-		line-height: 1;
-	}
+body {
+	line-height: 1;
+}
 
-	ol, ul {
-		list-style: none;
-	}
+ol, ul {
+	list-style: none;
+}
 
-	blockquote, q {
-		quotes: none;
-	}
+blockquote, q {
+	quotes: none;
+}
 
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
 
-	table {
-		border-collapse: collapse;
-		border-spacing: 0;
-	}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
-	body {
-		-webkit-text-size-adjust: none;
-	}
+body {
+	-webkit-text-size-adjust: none;
+}
 
-/* Box Model */
 
-	*, *:before, *:after {
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-	}
 
-/* Basic */
+	/* Base Styles
+	–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+		*, *:before, *:after {
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
 
 	@-ms-viewport {
 		width: device-width;
@@ -147,7 +149,8 @@
 
 		}
 
-/* BG */
+	/* BG
+	–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 	#bg {
 		-moz-transition: opacity 2s ease-in-out;
@@ -289,7 +292,8 @@
 		}
 	}
 
-/* Type */
+	/* Type
+	–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.75);
@@ -456,7 +460,8 @@
 			margin: 3em 0;
 		}
 
-/* Section/Article */
+	/* Section - Article
+	–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 	section.special, article.special {
 		text-align: center;
@@ -512,7 +517,8 @@
 
 	}
 
-/* Icon */
+/* Icon
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 	.icon {
 		text-decoration: none;
@@ -533,7 +539,8 @@
 			display: none;
 		}
 
-/* List */
+/* List
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 	ol {
 		list-style: decimal;
@@ -617,62 +624,9 @@
 
 	}
 
-/* Signup Form */
 
-	#signup-form {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		position: relative;
-	}
-
-		#signup-form input[type="text"],
-		#signup-form input[type="password"],
-		#signup-form input[type="email"] {
-			width: 18em;
-		}
-
-		#signup-form > * {
-			margin: 0 0 0 1em;
-		}
-
-		#signup-form > :first-child {
-			margin: 0 0 0 0;
-		}
-
-		@media screen and (max-width: 480px) {
-
-			#signup-form {
-				-moz-flex-direction: column;
-				-webkit-flex-direction: column;
-				-ms-flex-direction: column;
-				flex-direction: column;
-			}
-
-				#signup-form input[type="type"],
-				#signup-form input[type="password"],
-				#signup-form input[type="email"] {
-					width: 100%;
-				}
-
-				#signup-form > * {
-					margin: 1.25em 0 0 0;
-				}
-
-				#signup-form .message {
-					bottom: -1.5em;
-					font-size: 0.9em;
-					height: 1em;
-					left: 0;
-					line-height: inherit;
-					margin-top: 0;
-					position: absolute;
-				}
-
-		}
-
-/* Footer */
+	/* Footer
+	–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 	#footer {
 		-moz-transition: opacity 0.5s ease-in-out;

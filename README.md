@@ -5,7 +5,7 @@ Think that friend is really a Slytherin not a Gryffindor, but want a little magi
 
 Just use the `/sortinghat` slash command! Type your the slash command followed by a name of the witch or wizard to be sorted. Sorting Hat bot responds with a short rhyme and the banner of the selected House.
 
-![Sorting Hat Bot for Slack](https://github.com/lizlove/sorting-hat-slack/public/images/favicon.png)
+![Sorting Hat Bot for Slack](http://sorting-hat-bot.herokuapp.com/images/sortingHatBW.png)
 
 ## Install Sorting Hat on Slack
 
@@ -19,4 +19,4 @@ I have no official connection to JK Rowling or any other Harry Potter rights-hol
 
 ## Thanks
 
-Many thanks to ![Tomomi Imura](http://www.girliemac.com/), whose Slack app tutorial on Medium I used as a guide. [Medium](https://medium.com/@girlie_mac/creating-a-slack-command-bot-from-scratch-with-node-js-distribute-it-25cf81f51040#.d4a7ice1s)!
+I used [Tomomi Imura's](http://www.girliemac.com/) excellent Slack command bot tutorial on Medium as a guide. [Thank you!](https://medium.com/@girlie_mac/creating-a-slack-command-bot-from-scratch-with-node-js-distribute-it-25cf81f51040#.d4a7ice1s)

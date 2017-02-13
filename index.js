@@ -5,6 +5,7 @@ const path = require("path");
 const hatManager = require('./hatManager');
 const request = require('request');
 const favicon = require('serve-favicon');
+const http = require('http');
 
 const app = express();
 app.use(bodyParser.json());
@@ -20,7 +21,6 @@ const server = app.listen(process.env.PORT || 3080, () => {
 app.use(favicon(__dirname + '/public/images/favicon.ico'));
 
 // Slack Auth
-
 app.get('/slack', function(req, res){
   if (!req.query.code) { // access denied
     res.redirect('http://sorting-hat-bot.herokuapp.com/sort');
@@ -52,7 +52,6 @@ app.get('/slack', function(req, res){
 });
 
 // Sorting Hat Slash Command
-
 app.get('/', (req, res)=> {
   handleQuery(req.query, res);
 });
@@ -104,7 +103,12 @@ function handleQuery(q, res){
   }
 }
 
-// Routes - Index
+// Landing Page
 app.get('/sort', (req, res)=>{
   res.sendFile(path.join(__dirname+'/index.html'));
 });
+
+// Wake up Heroku
+setInterval(function() {
+    http.get("http://<sorting-hat-bot.herokuapp.com");
+}, 300000);

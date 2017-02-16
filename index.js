@@ -17,7 +17,6 @@ const server = app.listen(process.env.PORT || 3080, () => {
   console.log('Listening on port %d', server.address().port);
 });
 
-
 app.use(favicon(__dirname + '/public/images/favicon.ico'));
 
 // Slack Auth
@@ -110,5 +109,5 @@ app.get('/sort', (req, res)=>{
 
 // Wake up Heroku
 setInterval(function() {
-    http.get("http://<sorting-hat-bot.herokuapp.com");
+    http.get("http://sorting-hat-bot.herokuapp.com/sort");
 }, 300000);

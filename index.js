@@ -71,13 +71,11 @@ function handleQuery(q, res){
 
     let house = hatManager.getHogwartsHouse(name);
 
-    let image = `https://sorting-hat-bot.herokuapp.com/images/${house.name}.jpg`;
     let data = {
       response_type: 'in_channel', // public to the channel
       mrkdwn: true,
       attachments:[
       {
-        "image_url": `${image}`,
         "color": "#34a5c6",
         "author_name": `${name}`,
         "pretext": "You belong in...",

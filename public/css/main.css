@@ -1,4 +1,3 @@
-@import url('../../node_modules/font-awesome/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css?family=Rakkas');
 @import url('https://fonts.googleapis.com/css?family=Lora');
 /*
@@ -8,7 +7,6 @@
 */
 /* Base Styles
 	–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 *,
 *:before,
 *:after {
@@ -73,20 +71,29 @@ body.is-loading *:after {
     body {
         padding: 3em 3.5em 3.5em 3.5em;
     }
+    .hero {
+        margin: -3em -3.5em 0em -3.5em;
+    }
 }
 @media screen and (max-width: 736px) {
     body {
         padding: 0em 2em 2em 2em;
+    }
+    .hero {
+        padding: 0em -2em 0em -2em;
     }
 }
 @media screen and (max-width: 360px) {
     body {
         padding: 0em 1.25em 1.25em 1.25em;
     }
+    .hero {
+        padding: 0em -1.25em 0em -1.25em;
+    }
 }
-/* Type
-	–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+/* Type
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 body {
     color: rgba(255, 255, 255, 0.85);
     font-size: 16pt;
@@ -151,7 +158,6 @@ pre code {
 
 /* Section - Article
 	–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 .section {
     display: flex;
     flex-direction: column;
@@ -160,13 +166,10 @@ pre code {
     width: 100%;
 }
 
-/* Image
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.hat {
-    height: 100px !important;
-}
 
-/* Header */
+
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 header p {
     color: rgba(255, 255, 255, 0.75);
     position: relative;
@@ -181,6 +184,9 @@ header h2 + p {
 header a {
     color: inherit;
 }
+.hat {
+    height: 100px !important;
+}
 @media screen and (max-width: 736px) {
     header h1 {
         font-size: 2em;
@@ -194,9 +200,9 @@ header a {
         margin: 0 0 1em 0;
     }
 }
+
 /* Footer
 	–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 footer {
     -moz-transition: opacity 0.5s ease-in-out;
     -webkit-transition: opacity 0.5s ease-in-out;
@@ -231,6 +237,16 @@ footer .copyright li:first-child {
 footer .copyright a , footer .icons a {
     color: rgba(255, 255, 255, 0.85);
 }
+footer .icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+i.fa {
+  padding: 0 8px 0 0;
+}
+
 footer:hover {
     opacity: 1;
 }

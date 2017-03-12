@@ -15,31 +15,39 @@
 </head>
 <body>
   <!-- Header -->
-    <header id="header">
-      <h1 class="title">SortingHat.Co</h1>
+    <header class="section">
+      <img class="hat" src="images/sortingHatWhite.png" />
+      <h1 class="title">Sorting Hat Bot for Slack</h1>
       <p>Discover your Hogwarts House on Slack <br>
        with the Sorting Hat slash command</p>
     </header>
 
-  <!-- Signup Form -->
-    <div id="signup-form">
+    <div class="section">
       <a href="https://slack.com/oauth/authorize?scope=commands+team%3Aread&client_id=13962040612.127653198336">
-        <img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" />
+        <img alt="Add to Slack"
+             height="40"
+             width="139"
+             src="https://platform.slack-edge.com/img/add_to_slack.png"
+             srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x,
+             https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" />
       </a>
     </div>
 
-    <div id="usage">
-      <h2 class="title">Usage</h2>
-      <p>Enter your name following the /sortinghat slash command and prepare to be sorted.</p>
-      <pre><code>/sortinghat Lily Potter</code></pre>
+    <div class="section">
+      <h2 class="title sub-title">Usage</h2>
+      <pre><code>/sortinghat Jane Doe</code></pre>
     </div>
 
   <!-- Footer -->
-    <footer id="footer">
-      <ul class="icons">
-        <li><a href="https://github.com/lizlove/sorting-hat-slack" class="icon fa-github"><span class="label">GitHub</span></a></li>
-        <li><a href="mailto:elizabethlovero@gmail.com?Subject=SortingHat%Slackbot" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-      </ul>
+    <footer>
+      <div class="icons">
+        <a href="https://github.com/lizlove/sorting-hat-slack">
+            <i class="fa fa-github" aria-hidden="true"></i>GitHub
+        </a>
+        <a href="mailto:elizabethlovero@gmail.com?Subject=SortingHat%Slackbot">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>Email
+        </a>
+      </div>
       <ul class="copyright">
         <li>&copy; Elizabeth Lovero</li><li><a href="http://elizabethlovero.com">elizabethlovero.com</a></li>
       </ul>

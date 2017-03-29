@@ -20,4 +20,4 @@ I have no official connection to JK Rowling or any other Harry Potter rights-hol
 
 ## Thanks
 
-I used [Tomomi Imura's](http://www.girliemac.com/) excellent Slack command bot tutorial on Medium as a guide. [Thank you!](https://medium.com/@girlie_mac/creating-a-slack-command-bot-from-scratch-with-node-js-distribute-it-25cf81f51040#.d4a7ice1s)
+Sorting Hat Bot was inspired by [Tomomi Imura's](http://www.girliemac.com/) excellent HTTPCats. 

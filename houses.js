@@ -10,7 +10,7 @@ module.exports = [
     body: "You belong in Hufflepuff, where they are just and loyal. The patient Hufflepuffs are true and unafraid of toil."
   },
   {
-    title: "🦅 Ravenclaw",
+    title: "🐦 Ravenclaw",
     name: "Ravenclaw",
     body: "You belong in Ravenclaw; you have a ready mind. There those of wit and learning will always find their kind."
   },
